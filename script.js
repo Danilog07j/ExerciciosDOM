@@ -8,7 +8,7 @@ document.querySelector("#ex1Btn").addEventListener("click", () => {
 // Alterando o título
 document.querySelector("#btnAlterar").addEventListener("click", () => {
   const titulo = document.querySelector("#titulo");
-  titulo.textContent = "Desenvolvimento de Sistemas — SENAI";
+  titulo.textContent = "Exercício 2, Título alterado";
   titulo.style.color = "#0056b3";
 });
 
