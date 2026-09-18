@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios JavaScript & DOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Exercícios de Manipulação do DOM</h1>
+
+  <!-- NÍVEL FÁCIL -->
+  <div class="secao">
+    <h2>Nível Fácil</h2>
+
+    <!-- Ex 01 -->
+    <div class="exercicio">
+      <h3>01 — Saudação</h3>
+      <input type="text" id="ex1Nome" placeholder="Digite seu nome">
+      <button id="ex1Btn">Enviar</button>
+      <p id="ex1Resultado"></p>
+    </div>
+
+    <!-- Ex 02 -->
+    <div class="exercicio">
+      <h3 id="titulo">Curso de Desenvolvimento de Sistemas</h3>
+      <button id="btnAlterar">Alterar título</button>
+    </div>
+
+    <!-- Ex 03 -->
+    <div class="exercicio">
+      <h3>03 — Contador de cliques</h3>
+      <button id="ex3Btn">+ Clique aqui</button>
+      <p id="ex3Resultado">Cliques: 0</p>
+    </div>
+
+    <!-- Ex 04 -->
+    <div class="exercicio">
+      <h3>04 — Alterando uma mensagem</h3>
+      <p id="ex4Status">Status: Atendimento fechado</p>
+      <button id="ex4Btn">Abrir atendimento</button>
+    </div>
+
+    <!-- Ex 05 -->
+    <div class="exercicio">
+      <h3>05 — Calculadora simples</h3>
+      <input type="text" placeholder="Produto">
+      <input type="number" id="ex5Qtd" placeholder="Quantidade">
+      <input type="number" id="ex5Preco" placeholder="Preço">
+      <button id="ex5Btn">Calcular Total</button>
+      <p id="ex5Resultado">Total: R$ 0.00</p>
+    </div>
+  </div>
+
+  <!-- NÍVEL MÉDIO -->
+  <div class="secao">
+    <h2>Nível Médio</h2>
+
+    <!-- Ex 06 -->
+    <div class="exercicio">
+      <h3>06 — Sistema de notas</h3>
+      <input type="number" id="ex6N1" placeholder="Nota 1">
+      <input type="number" id="ex6N2" placeholder="Nota 2">
+      <input type="number" id="ex6N3" placeholder="Nota 3">
+      <button id="ex6Btn">Calcular Média</button>
+      <p id="ex6Resultado"></p>
+    </div>
+
+    <!-- Ex 07 -->
+    <div class="exercicio">
+      <h3>07 — Validação de formulário</h3>
+      <input type="text" id="ex7Nome" placeholder="Nome">
+      <input type="email" id="ex7Email" placeholder="E-mail">
+      <input type="password" id="ex7Senha" placeholder="Senha">
+      <button id="ex7Btn">Cadastrar</button>
+      <p id="ex7Resultado"></p>
+    </div>
+
+    <!-- Ex 08 -->
+    <div class="exercicio">
+      <h3>08 — Sistema de estoque</h3>
+      <input type="text" placeholder="Produto">
+      <input type="number" id="ex8Disp" placeholder="Qtd Disponível">
+      <input type="number" id="ex8Solic" placeholder="Qtd Solicitada">
+      <button id="ex8Btn">Verificar Estoque</button>
+      <p id="ex8Resultado"></p>
+    </div>
+
+    <!-- Ex 09 -->
+    <div class="exercicio">
+      <h3>09 — Lista de tarefas</h3>
+      <input type="text" id="ex9Tarefa" placeholder="Nova tarefa">
+      <button id="ex9Btn">Adicionar</button>
+      <h4>Minhas tarefas</h4>
+      <ul id="ex9Lista"></ul>
+    </div>
+
+    <!-- Ex 10 -->
+    <div class="exercicio">
+      <h3>10 — Calculadora de desconto</h3>
+      <input type="text" placeholder="Produto">
+      <input type="number" id="ex10Preco" placeholder="Preço R$">
+      <input type="number" id="ex10Desc" placeholder="Desconto %">
+      <button id="ex10Btn">Calcular</button>
+      <div id="ex10Resultado"></div>
+    </div>
+  </div>
+
+  <!-- NÍVEL DIFÍCIL -->
+  <div class="secao">
+    <h2>Nível Difícil</h2>
+
+    <!-- Ex 11 -->
+    <div class="exercicio">
+      <h3>11 — Sistema de login</h3>
+      <div id="ex11Form">
+        <input type="text" id="ex11User" placeholder="Usuário">
+        <input type="password" id="ex11Pass" placeholder="Senha">
+        <button id="ex11Btn">Entrar</button>
+        <p id="ex11Erro" class="erro-texto"></p>
+      </div>
+      <div id="ex11Area" class="oculto">
+        <h4>Bem-vindo ao sistema acadêmico!</h4>
+      </div>
+    </div>
+
+    <!-- Ex 12 -->
+    <div class="exercicio">
+      <h3>12 — Carrinho de compras</h3>
+      <input type="text" id="ex12Nome" placeholder="Nome do Produto">
+      <input type="number" id="ex12Preco" placeholder="Preço R$">
+      <button id="ex12Btn">Adicionar ao Carrinho</button>
+      <ul id="ex12Lista"></ul>
+      <p id="ex12Resumo">Qtd: 0 | Total: R$ 0.00</p>
+    </div>
+
+    <!-- Ex 13 -->
+    <div class="exercicio">
+      <h3>13 — Sistema de cadastro de alunos</h3>
+      <input type="text" id="ex13Nome" placeholder="Nome">
+      <input type="number" id="ex13Idade" placeholder="Idade">
+      <input type="text" id="ex13Curso" placeholder="Curso">
+      <button id="ex13Btn">Cadastrar</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Curso</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody id="ex13Tabela"></tbody>
+      </table>
+    </div>
+
+    <!-- Ex 14 -->
+    <div class="exercicio">
+      <h3>14 — Dashboard de vendas</h3>
+      <input type="text" id="ex14Prod" placeholder="Produto">
+      <input type="number" id="ex14Qtd" placeholder="Quantidade">
+      <input type="number" id="ex14Valor" placeholder="Valor Unitário">
+      <button id="ex14Btn">Cadastrar Venda</button>
+      <br><br>
+      <input type="text" id="ex14Busca" placeholder="Pesquisar produto...">
+      <p id="ex14Dash">Faturamento: R$ 0.00 | Itens: 0 | Vendas: 0</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Qtd</th>
+            <th>Unitário</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="ex14Tabela"></tbody>
+      </table>
+    </div>
+
+    <!-- Ex 15 -->
+    <div class="exercicio">
+      <h3>15 — Mini sistema acadêmico</h3>
+      <input type="text" id="ex15Nome" placeholder="Nome">
+      <input type="text" id="ex15RA" placeholder="RA">
+      <input type="text" id="ex15Curso" placeholder="Curso">
+      <input type="number" id="ex15N1" placeholder="Nota 1">
+      <input type="number" id="ex15N2" placeholder="Nota 2">
+      <button id="ex15Btn">Cadastrar Aluno</button>
+      <br><br>
+      <input type="text" id="ex15Busca" placeholder="Pesquisar por nome...">
+      <p id="ex15Painel">Alunos: 0 | Aprovados: 0 | Reprovados: 0</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>RA</th>
+            <th>Curso</th>
+            <th>Média</th>
+            <th>Situação</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody id="ex15Tabela"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
