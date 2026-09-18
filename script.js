@@ -1,32 +1,32 @@
-// Ex 01 — Saudação
+// Saudação
 document.querySelector("#ex1Btn").addEventListener("click", () => {
   const nome = document.querySelector("#ex1Nome").value;
   document.querySelector("#ex1Resultado").textContent =
     `Olá, ${nome}! Seja bem-vindo!`;
 });
 
-// Ex 02 — Alterando o título
+// Alterando o título
 document.querySelector("#btnAlterar").addEventListener("click", () => {
   const titulo = document.querySelector("#titulo");
   titulo.textContent = "Desenvolvimento de Sistemas — SENAI";
   titulo.style.color = "#0056b3";
 });
 
-// Ex 03 — Contador de cliques
+// Contador de cliques
 let cliques = 0;
 document.querySelector("#ex3Btn").addEventListener("click", () => {
   cliques++;
   document.querySelector("#ex3Resultado").textContent = `Cliques: ${cliques}`;
 });
 
-// Ex 04 — Alterando uma mensagem
+// Alterando uma mensagem
 document.querySelector("#ex4Btn").addEventListener("click", () => {
   const msg = document.querySelector("#ex4Status");
   msg.textContent = "Status: Atendimento aberto";
   msg.style.color = "green";
 });
 
-// Ex 05 — Calculadora simples
+// Calculadora simples
 document.querySelector("#ex5Btn").addEventListener("click", () => {
   const qtd = Number(document.querySelector("#ex5Qtd").value);
   const preco = Number(document.querySelector("#ex5Preco").value);
@@ -35,7 +35,7 @@ document.querySelector("#ex5Btn").addEventListener("click", () => {
     `Total: R$ ${total.toFixed(2)}`;
 });
 
-// Ex 06 — Sistema de notas
+// Sistema de notas
 document.querySelector("#ex6Btn").addEventListener("click", () => {
   const n1 = Number(document.querySelector("#ex6N1").value);
   const n2 = Number(document.querySelector("#ex6N2").value);
@@ -46,7 +46,7 @@ document.querySelector("#ex6Btn").addEventListener("click", () => {
     `Média: ${media.toFixed(1)} - ${status}`;
 });
 
-// Ex 07 — Validação de formulário
+// Validação de formulário
 document.querySelector("#ex7Btn").addEventListener("click", () => {
   const nome = document.querySelector("#ex7Nome").value;
   const email = document.querySelector("#ex7Email").value;
@@ -62,7 +62,7 @@ document.querySelector("#ex7Btn").addEventListener("click", () => {
   }
 });
 
-// Ex 08 — Sistema de estoque
+// Sistema de estoque
 document.querySelector("#ex8Btn").addEventListener("click", () => {
   const disp = Number(document.querySelector("#ex8Disp").value);
   const solic = Number(document.querySelector("#ex8Solic").value);
@@ -77,7 +77,7 @@ document.querySelector("#ex8Btn").addEventListener("click", () => {
   }
 });
 
-// Ex 09 — Lista de tarefas
+// Lista de tarefas
 document.querySelector("#ex9Btn").addEventListener("click", () => {
   const input = document.querySelector("#ex9Tarefa");
   if (input.value) {
@@ -88,7 +88,7 @@ document.querySelector("#ex9Btn").addEventListener("click", () => {
   }
 });
 
-// Ex 10 — Calculadora de desconto
+// Calculadora de desconto
 document.querySelector("#ex10Btn").addEventListener("click", () => {
   const preco = Number(document.querySelector("#ex10Preco").value);
   const desc = Number(document.querySelector("#ex10Desc").value);
@@ -100,7 +100,7 @@ document.querySelector("#ex10Btn").addEventListener("click", () => {
   `;
 });
 
-// Ex 11 — Sistema de login
+// Sistema de login
 document.querySelector("#ex11Btn").addEventListener("click", () => {
   const user = document.querySelector("#ex11User").value;
   const pass = document.querySelector("#ex11Pass").value;
@@ -114,7 +114,7 @@ document.querySelector("#ex11Btn").addEventListener("click", () => {
   }
 });
 
-// Ex 12 — Carrinho de compras
+// Carrinho de compras
 const carrinho = [];
 document.querySelector("#ex12Btn").addEventListener("click", () => {
   const nome = document.querySelector("#ex12Nome").value;
@@ -151,7 +151,7 @@ function atualizarCarrinho() {
     `Qtd: ${carrinho.length} | Total: R$ ${total.toFixed(2)}`;
 }
 
-// Ex 13 — Sistema de cadastro de alunos
+// Sistema de cadastro de alunos
 document.querySelector("#ex13Btn").addEventListener("click", () => {
   const nome = document.querySelector("#ex13Nome").value;
   const idade = document.querySelector("#ex13Idade").value;
@@ -170,7 +170,7 @@ document.querySelector("#ex13Btn").addEventListener("click", () => {
   }
 });
 
-// Ex 14 — Dashboard de vendas
+// Dashboard de vendas
 const vendas = [];
 document.querySelector("#ex14Btn").addEventListener("click", () => {
   const prod = document.querySelector("#ex14Prod").value;
@@ -209,7 +209,7 @@ function atualizarVendas() {
     `Faturamento: R$ ${fat.toFixed(2)} | Itens: ${totalItens} | Vendas: ${vendas.length}`;
 }
 
-// Ex 15 — Mini sistema acadêmico
+// Mini sistema acadêmico
 const alunos = [];
 document.querySelector("#ex15Btn").addEventListener("click", () => {
   const nome = document.querySelector("#ex15Nome").value;
